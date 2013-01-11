@@ -27,4 +27,5 @@ Initial Setup
 Building
 --------
 1. Run `mvn clean install` from the root folder
+2. Look in **/target directories for zip files with docs
 
