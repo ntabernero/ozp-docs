@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.ozoneplatform</groupId>
+        <artifactId>ozoneplatform</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <groupId>org.ozoneplatform.docs</groupId>
+    <artifactId>docs</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+
+    <packaging>pom</packaging>
+    <name>Ozone Platform Docs</name>
+    <description>see README.md</description>
+
+    <properties>
+    </properties>
+
+    <scm>
+        <connection>scm:git:https://www.owfgoss.org/git/repos/docs.git</connection>
+        <developerConnection>scm:git:https://www.owfgoss.org/git/repos/docs.git</developerConnection>
+        <url>https://www.owfgoss.org/crucible/browse/ozoneplatform/</url>
+    </scm>
+
+    <modules>
+    </modules>
+
+    <repositories>
+        <repository>
+            <id>ozone.release</id>
+            <name>Ozone Community Release Repository</name>
+            <url>https://www.owfgoss.org/nexus/content/repositories/releases</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
+        <repository>
+            <id>ozone.snapshot</id>
+            <name>Ozone Community Snapshot Repository</name>
+            <url>https://www.owfgoss.org/nexus/content/repositories/snapshots</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+        </repository>
+    </repositories>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.0</version>
+                <configuration>
+                    <!-- maven defaults to 1.3, at least on ubuntu -->
+                    <source>1.5</source>
+                    <target>1.5</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <distributionManagement>
+        <repository>
+            <id>nexus</id>
+            <name>Releases</name>
+            <url>https://www.owfgoss.org/nexus/content/repositories/releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus</id>
+            <name>Snapshots</name>
+            <url>https://www.owfgoss.org/nexus/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+</project>
