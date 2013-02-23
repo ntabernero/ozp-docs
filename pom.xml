@@ -21,6 +21,12 @@
     <properties>
     </properties>
 
+    <scm>
+        <connection>scm:git:https://github.com/ozoneplatform/ozp-docs.git</connection>
+        <developerConnection>scm:git:https://github.com/ozoneplatform/ozp-docs.git</developerConnection>
+        <url>https://www.owfgoss.org/crucible/browse/ozp-docs/</url>
+    </scm>
+
     <modules>
         <module>owf</module>
         <module>marketplace</module>
