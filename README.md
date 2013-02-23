@@ -1,4 +1,4 @@
-Docs Project 
+Docs Project [![Build Status](https://travis-ci.org/ntabernero/ozp-docs.png)](https://travis-ci.org/ntabernero/ozp-docs)
 ======================
 
 This is a which contains documentation for the OzonePlatform
